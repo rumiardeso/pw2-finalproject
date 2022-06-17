@@ -1,0 +1,7 @@
+<div class="container">
+    <div class="row">
+        <app-favorites
+          *ngFor="let fav of favorites ; let i=index "
+          [imagem]="{id: fav.id,imagem: fav.imagem,title: fav.title,data: fav.data}"></app-favorites>          
+    </div>
+</div>

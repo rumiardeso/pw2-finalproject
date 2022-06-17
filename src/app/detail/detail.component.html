@@ -1,0 +1,18 @@
+<div class="card mb-3 box" style="max-width: 1280px;" >
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="i.urls.regular" #imagem class="imagem" alt="image">
+      </div>
+      <div class="col-md-8" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true} ">
+        <div class="card-body center">
+          <h3 class="card-title" #descricao><b>  {{i.alt_description}}</b></h3> 
+          <p class="card-text gray" #ola >{{i.user.name}} </p>
+          <p class="card-text" #data>{{i.created_at}}</p>
+          <a  class="btn btn-danger ">Likes {{i.likes}}</a>
+          <a  class="btn btn-secondary gap"> Downloads {{i.downloads}}</a>
+          <button type="button" class="btn btn-light"  (click)="onFav(i.id,i.urls.regular,i.alt_description,i.created_at)" routerLink="/favorites">Favorites</button> 
+          <p class="card-bottom">{{i.tags[1].title}}</p>
+        </div>
+      </div>
+    </div>
+  </div>

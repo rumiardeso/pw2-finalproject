@@ -1,0 +1,15 @@
+<nav class="navbar navbar-light fixed-top justify-content-between">
+    <div class="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <a class="navbar-brand" >
+      <fa-icon [icon]="faHatWizard" routerLink="" ></fa-icon>   
+      <span><b> Image Wizard </b></span>
+      <a class="favorites" routerLink="/favorites"> Favorites </a>
+    </a> 
+  </div> 
+  <form class="form-inline"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <input class="form-control" type="text">
+    <button type="submit" class="btn btn-outline-success my-2 my-sm-0"  routerLink=""> Search </button>
+  </form>
+</nav>
+
+ 

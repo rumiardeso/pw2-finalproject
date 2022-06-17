@@ -1,0 +1,61 @@
+  .center {
+    text-align: center;
+  }
+  
+  .borderr{
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 50px;
+    border-radius: 3px;
+  }
+    
+  .descricao{
+    line-height: 0.8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .centro {
+    text-align: center;
+    margin-left: 40px;
+  }
+  
+  .right{
+    float: right;
+  }
+  
+  .row{
+    padding-top: 90px;
+    padding-bottom: 75px;
+    column-span: 10px;
+    row-gap: 15px;
+    margin-left: 40px;
+}
+  
+span {
+    color: black;
+    margin-left: 10px;
+}
+
+.page-link{
+  color: black;
+}
+.page-link:hover {
+  color: black ;
+}
+
+.pagination{
+  margin: -20px -50px; 
+  position:relative;
+  top:95%; 
+  left:50%;
+  position: fixed;
+  bottom: 0;
+}
+
+
+@media only screen and (min-width : 500px) {
+
+    .container { max-width: 1700px; } 
+} 

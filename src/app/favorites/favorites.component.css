@@ -1,0 +1,37 @@
+.left{
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.imagem {
+  width: 318px;
+  height: 318px;
+  object-fit: cover;
+}
+
+.borderr{
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 10px;
+  padding-bottom: 50px;
+  border-radius: 3px;
+}
+
+.right {
+  float: right; 
+}
+
+.descricao{
+  line-height: 0.8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.centro {
+  text-align: center;
+  margin-left: 40px;
+}
+

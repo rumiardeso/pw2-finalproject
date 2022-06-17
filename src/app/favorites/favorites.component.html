@@ -1,0 +1,10 @@
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card nopadding" style="width: 20rem;">
+    <img  [src]="imagem.imagem"  class="card-img-top imagem" alt="imagem">
+  <div class="card-body">
+    <h5 class="card-title center"><b>{{ imagem.title }} </b></h5>
+    <b>{{ imagem.data }} </b>
+    <button type="button" class="btn btn-light right" [routerLink]="['/Image', imagem.id]"><fa-icon [icon]="faEye"></fa-icon></button>
+  </div>
+  </div>
+</div>

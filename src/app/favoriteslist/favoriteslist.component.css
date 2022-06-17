@@ -1,0 +1,25 @@
+.row{
+    padding-top: 90px;
+    padding-bottom: 75px;
+    column-span: 10px;
+    row-gap: 15px;
+    margin-left: 40px;
+}
+  
+span {
+    color: black;
+    margin-left: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media only screen and (min-width : 500px) {
+
+    .container { max-width: 1700px; } 
+} 

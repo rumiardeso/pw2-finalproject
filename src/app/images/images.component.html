@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let i of images;">
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card nopadding" style="width: 20rem;">
+          <img  [src]="i.imagem"  class="card-img-top" alt="Imagem">
+        <div class="card-body">
+          <h5 class="card-title center"><b>{{ i.titulo }} </b></h5>
+          <b>{{ i.data }} </b>
+          <button type="button" class="btn btn-light right" [routerLink]="['/Image', i.id]"><fa-icon [icon]="faEye"></fa-icon></button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Paginacao-->
+<nav aria-label="Page navigation example center" >
+  <ul class="pagination justify-content-center fixed">
+    <li class="page-item"><a class="page-link" (click)="anterior()"><<</a></li>
+    <li class="page-item"><a class="page-link" (click)="seguinte()">>></a></li>
+  </ul>
+</nav>
